@@ -1,0 +1,29 @@
+$elements: 4;
+$duration: 3s;
+
+.flip {
+      text-align: center; 
+}
+
+.lead, .tail {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tail p {
+    position: absolute;
+    animation: flip $elements*$duration infinite ease;
+}
+
+@for $index from 1 through 4 {
+    .tail p:nth-child(#{$index}) {
+        animation-delay: #{(0 - ($index - 1)) * $duration};
+    }
+}
+
+@keyframes flip {
+    0% { opacity: 0; transform: translateY(100%); }
+    #{100% / $elements / 2} { opacity: 1;  transform: translateY(0%); }
+    #{100% / $elements} { opacity: 0;  transform: translateY(-100%); }
+    100% { opacity: 0; transform: translateY(-100%); }
+}
