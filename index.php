@@ -10,7 +10,6 @@
 
                         <link rel="stylesheet" href="styles.css">
                         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
                         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
                                 <!--[if lt IE 9]>
@@ -24,7 +23,10 @@
 
     <body>
 
-    <nav class="container">
+    <nav class="container-fluid">
+        <span class="navbar-brand">
+        <img class="img-fluid" src="images/logo.png" width="80" height="80" alt="logo">
+        </span>
         <ul class="nav justify-content-end">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
@@ -43,7 +45,7 @@
         </ul> <!-- End of my navigation bar -->
     </nav> <!-- End of my navigation bar container -->
 
-<div class="container">
+<div class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
         <ol class="carousel-indicators">
@@ -57,24 +59,24 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/Boston.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Header 5</h5>
-                    <p>Some text here</p>
+                    <h1>I love Boston!</h1>
+                    <p>I really enjoy exploring this beautiful city.</p>
                 </div>
             </div>
 
              <div class="carousel-item">
                 <img class="d-block w-100" src="images/night.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Header 5</h5>
-                    <p>Some text here</p>
+                    <h1>My View</h1>
+                    <p>The view from my balcony is amazing and relaxing.</p>
                 </div>
             </div>
 
              <div class="carousel-item">
                 <img class="d-block w-100" src="images/code.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Header 5</h5>
-                    <p>Some text here</p>
+                    <h1>I love learning!</h1>
+                    <p>I am a self taught developer.</p>
                 </div>
             </div>
 
@@ -92,23 +94,44 @@
     </div> <!-- End of my carousel -->
 </div> <!-- End of my carousel container -->
 
-<div class="container">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="flip">
+                <p class="lead">I would consider myself</p>
+                <div class="tail">
+                    <p>a Developer.</p>
+                    <p>an Explorer.</p>
+                    <p>a Designer.</p>
+                    <p>a Learner.</p>
+                    <p>a Reader.</p>
+                    <p>a Photographer.</p>
+                    <p>a Video Editor.</p>
+                    <p>a Food lover.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
     <section class="row">
         <div class="col-lg-6 col-md-6">
-            <h2>A little about me</h2>
-            <p>Hi!, I'm Jose Alvarez, and im a Freelancing web developer/designer who likes to keep up in the latest frameworks, languages and standards for mobile friendly websites that runs efficiently both front end and back end wise, i fell in love with hardware and software at an early age and find excitement in every project my clients set or those i set myself every day, creating something intuitive and responsive and able to function across platforms and browsers is something i strive for.
+            <img class="img-fluid" src="images/me.png" alt="Author">
+        </div>
 
-I love to work with people on projects that are challenging and creative, both mobile friendly and complaint to web standards. I like to read, watch cool movies, bike and explore the city i might be at the time.
+        <div class="col-lg-6 col-md-6">
+            <h2>A little about me</h2>
+            <p>Hi!, I'm Jose Alvarez, and I am a self taught web developer/designer who likes to keep up in the latest frameworks, languages and standards for mobile friendly websites that runs efficiently both front end and back end wise, I fell in love with hardware and software at an early age and find excitement in every project that  I set myself every day, creating something intuitive and responsive and able to function across platforms and browsers is something I strive for.
+
+I love to work with people on projects that are challenging and creative, both mobile friendly and complaint to web standards. I like to read, watch cool movies, bike and explore the city I might be at the time.
 
 But overall im just a simple person doing what he loves.</p>
-        </div>
-        <div class="col-lg-6 col-md-6">
-            <img class="img-fluid" src="images/me.png" alt="Author">
         </div>
     </section>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <h2>Skills</h2>
     
     <div class="row">
@@ -116,7 +139,7 @@ But overall im just a simple person doing what he loves.</p>
             <span class="fa fa-code"></span>
             <h3>Web Desing & Code</h3>
             <p>Simple, usable, attractive, standards compliant & responsive websites you can rely on.
-                                        The Web development process includes Web design, Web content development, client-side/server-side
+                                        The web development process includes web design, web content development, client-side/server-side
                                         scripting and network security configuration, among other tasks.</p>
         </div>
         <div class="col-md-4">
@@ -127,16 +150,19 @@ But overall im just a simple person doing what he loves.</p>
         <div class="col-md-4">
             <i class="devicon-vim-plain colored"></i>
             <h3>Vim</h3>
-            <p>Vim is a clone of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991<p>
+            <p>Vim is a clone of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991. I love the ability to tweak my tools depending on my environment and Vim does that perfectly.<p>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             <h1>Contact me</h1>
             <h2>Want to chat? Get in touch!<h2>
+            <p>Feel free to connect via any social network or email me at: 
+            <br> 
+            <a href="mailto:logan.jma@gmail.com">Email me</a></p>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter-square"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -149,7 +175,7 @@ But overall im just a simple person doing what he loves.</p>
 </div>
 
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h1>Think Big, because we become what we think of</h1>

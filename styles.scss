@@ -1,4 +1,4 @@
-$elements: 4;
+$elements: 8;
 $duration: 3s;
 
 .flip {
@@ -15,7 +15,7 @@ $duration: 3s;
     animation: flip $elements*$duration infinite ease;
 }
 
-@for $index from 1 through 4 {
+@for $index from 1 through $elements {
     .tail p:nth-child(#{$index}) {
         animation-delay: #{(0 - ($index - 1)) * $duration};
     }
