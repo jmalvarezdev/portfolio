@@ -27,3 +27,13 @@ $duration: 3s;
     #{100% / $elements} { opacity: 0;  transform: translateY(-100%); }
     100% { opacity: 0; transform: translateY(-100%); }
 }
+
+
+.car-heading {
+    font-size: 7em;
+}
+
+.skills {
+    text-align: center;
+    padding: 1%;
+}

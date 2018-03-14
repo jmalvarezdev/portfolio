@@ -8,9 +8,9 @@
                 <title>Title goes here.</title>
                     <meta name="Content" content="Description">
 
-                        <link rel="stylesheet" href="styles.css">
                         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
                         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+                        <link rel="stylesheet" href="styles.css">
 
                                 <!--[if lt IE 9]>
                                     <script
@@ -23,12 +23,17 @@
 
     <body>
 
-    <nav class="container-fluid">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <span class="navbar-brand">
         <img class="img-fluid" src="images/logo.png" width="80" height="80" alt="logo">
         </span>
-        <ul class="nav justify-content-end">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
@@ -43,7 +48,9 @@
                 </div>
             </li>
         </ul> <!-- End of my navigation bar -->
-    </nav> <!-- End of my navigation bar container -->
+        </div>
+    </nav>
+    </div> <!-- End of my navigation bar container -->
 
 <div class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -54,12 +61,12 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
 
-        <div class="carousel-inner">
+        <div id="caro-inner" class="carousel-inner">
 
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/Boston.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>I love Boston!</h1>
+                    <h1 class="car-heading">I love Boston!</h1>
                     <p>I really enjoy exploring this beautiful city.</p>
                 </div>
             </div>
@@ -67,7 +74,7 @@
              <div class="carousel-item">
                 <img class="d-block w-100" src="images/night.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>My View</h1>
+                    <h1 class="car-heading">My View</h1>
                     <p>The view from my balcony is amazing and relaxing.</p>
                 </div>
             </div>
@@ -75,7 +82,7 @@
              <div class="carousel-item">
                 <img class="d-block w-100" src="images/code.jpg" alt="Cute pet">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>I love learning!</h1>
+                    <h1 class="car-heading">I love learning!</h1>
                     <p>I am a self taught developer.</p>
                 </div>
             </div>
@@ -132,7 +139,7 @@ But overall im just a simple person doing what he loves.</p>
 </div>
 
 <div class="container-fluid">
-    <h2>Skills</h2>
+    <h2 class="skills">Skills</h2>
     
     <div class="row">
         <div class="col-md-4 animated fadeInDown">

@@ -46,5 +46,11 @@
   100% {
     opacity: 0;
     transform: translateY(-100%); } }
+.car-heading {
+  font-size: 7em; }
+
+.skills {
+  text-align: center;
+  padding: 1%; }
 
 /*# sourceMappingURL=styles.css.map */
