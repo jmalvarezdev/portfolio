@@ -2,12 +2,19 @@ $elements: 8;
 $duration: 3s;
 
 .flip {
-      text-align: center; 
+      text-align: center;
+      margin: 4%;
+}
+
+.lead {
+    font-size: 2em;
 }
 
 .lead, .tail {
     display: inline-block;
+    padding-left: 1%;
     vertical-align: top;
+    font-size: 2em;
 }
 
 .tail p {
@@ -31,9 +38,88 @@ $duration: 3s;
 
 .car-heading {
     font-size: 7em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.car-par {
+    font-size: 1.8em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.back-back {
+    padding-top: 25px;
+    background-color: #f8f9fa;
+}
+
 
 .skills {
     text-align: center;
     padding: 1%;
+    margin: 1%;
+    font-size: 5em;
 }
+
+.skill-header {
+    padding: 5%;
+}
+
+.skill-par {
+    padding: 4%;
+}
+.fa-css3-alt {
+    color: tomato;
+}
+
+.devicon-vim-plain {
+    font-size: 7em;
+}
+
+.devicon-javascript-plain {
+    font-size: 7em;
+}
+
+.devicon-php-plain {
+    font-size: 7em;
+}
+
+.devicon-laravel-plain {
+    font-size: 7em;
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+}
+
+.contact-chat {
+    text-align: center;
+    padding: 1%;
+}
+
+.contact-email {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.contact-email > a:hover {
+    text-decoration: none;
+}
+
+.contact-email a {
+    color: #28a745;
+}
+
+.social-media {
+    text-align: center;
+    padding: 2%;
+}
+
+.contact-info {
+    padding: 4%;
+}
+
+.footer {
+    text-align: center;
+}
+
